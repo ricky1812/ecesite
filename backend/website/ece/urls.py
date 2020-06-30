@@ -8,5 +8,5 @@ urlpatterns = [
     path('notice/',views.NoticeList.as_view()),
     path('notice/<int:pk>/', views.NoticeDetail.as_view()),
     path('member/',views.MemberList.as_view()),
-    path('member/<int:pk>',views.MemberList.as_view()),
+    path('member/<int:pk>',views.MemberDetail.as_view()),
 ]

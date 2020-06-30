@@ -25,3 +25,4 @@ class Members(models.Model):
 	phone=models.CharField(null=True,blank=False, max_length=15)
 	fb=models.URLField(null=True, blank=False)
 	ln=models.URLField(null=True, blank=False)
+	yr=models.IntegerField(null=True, blank=False)
