@@ -15,8 +15,18 @@ class NoticeList(generics.ListCreateAPIView):
 	queryset=Notice.objects.all()
 	serializer_class=NoticeSerializers
 
-class NoticeDetail(generics.ListCreateAPIView):
+class NoticeDetail(generics.RetrieveUpdateDestroyAPIView):
 	queryset=Notice.objects.all()
 	serializer_class=NoticeSerializers
+
+class MemberList(generics.ListCreateAPIView):
+	queryset=Members.objects.all()
+	serializer_class=MemberSerializers
+
+class MemberDetail(generics.RetrieveUpdateDestroyAPIView):
+	queryset=Members.objects.all()
+	serializer_class=MemberSerializers
+
+
 
 

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Faculty from '@/components/Faculty'
 import Notice from '@/components/Notice'
+import Member from '@/components/Member'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ Vue.use(VueRouter)
     path:'/notice',
     name:'Notice',
     component: Notice
+  },
+  {
+    path:'/member',
+    name:'Member',
+    component: Member
   },
 ]
 

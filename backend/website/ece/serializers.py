@@ -13,3 +13,9 @@ class NoticeSerializers(serializers.ModelSerializer):
 		model= Notice
 
 		fields=['id','title','description','date_time']
+
+class MemberSerializers(serializers.ModelSerializer):
+	class Meta:
+		model=Members
+
+		fields=['id','name','image','email','phone','fb','ln']
