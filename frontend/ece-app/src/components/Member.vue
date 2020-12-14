@@ -24,7 +24,7 @@ export default{
 	methods: {
 	all: function () {
 		
-		axios.get('http://127.0.0.1:8000/member/')
+		axios.get('http://rounak1812.pythonanywhere.com/member/')
 		.then( response =>{
 			this.member_list = response.data
 		});
